@@ -115,26 +115,27 @@
     margin-bottom: none;
 
   }
-  .contact-us-container {
+  .contactuscontainer {
     display: flex;
     justify-content: space-between;
+
   }
   
-  .left-column {
+  .leftcolumn {
     flex: 1;
   }
   
-  .right-column {
+  .rightcolumn {
     flex: 1;
   }
   
-  .contact-form {
+  .contactform {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adding a light shadow */
   }
   
-  .form-group {
+  .formgroup {
     margin-bottom: 15px;
   }
   

@@ -14,22 +14,22 @@ function Contactus() {
                 <h1>Contact us</h1>
             </Title>
 
-            <div className="contact-us-container">
-                <div className="left-column">
+            <div className={styles.contactuscontainer}>
+                <div className={styles.leftcolumn}>
                     <h2>Contact Us</h2>
                     <p>Fill out the form below to get in touch with us.</p>
                 </div>
-                <div className="right-column">
-                    <form className="contact-form">
-                        <div className="form-group">
+                <div className={styles.rightcolumn}>
+                    <form className={styles.contactform}>
+                        <div className={styles.formgroup}>
                             <label htmlFor="name">Name:</label>
                             <input type="text" id="name" name="name" placeholder="Your name" />
                         </div>
-                        <div className="form-group">
+                        <div className={styles.formgroup}>
                             <label htmlFor="email">Email:</label>
                             <input type="email" id="email" name="email" placeholder="Your email" />
                         </div>
-                        <div className="form-group">
+                        <div className={styles.formgroup}>
                             <label htmlFor="message">Message:</label>
                             <textarea id="message" name="message" placeholder="Your message"></textarea>
                         </div>
@@ -37,6 +37,8 @@ function Contactus() {
                     </form>
                 </div>
             </div>
+            <img>
+            </img>
 
 
         </>
