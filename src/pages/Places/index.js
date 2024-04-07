@@ -14,7 +14,7 @@ function Places() {
             <Banner imagem='home' />
             <Title>
                 <h1>
-                    {text.titles}
+                    {text.title}
                 </h1>
             </Title>
             <section className={styles.containerPlaces}>
@@ -22,13 +22,7 @@ function Places() {
                     {text.description}
                 </div>
                 <div className='video'>
-                    <iframe 
-                        width="100%"
-                        height="100%"
-                        src={text.link}
-                        title={text.title}
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
 
                 </div>
             </section>
