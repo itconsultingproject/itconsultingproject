@@ -2,8 +2,10 @@
 import Title from 'components/Title';
 import styles from '../../Styles.module.css';
 import Banner from 'components/Banner';
-import Card from 'components/Cards';
-
+import FormValidation from 'components/Form';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 function Contactus() {
@@ -13,34 +15,19 @@ function Contactus() {
             <Title>
                 <h1>Contact us</h1>
             </Title>
-
-            <div className={styles.contactuscontainer}>
-                <div className={styles.leftcolumn}>
-                    <h2>Contact Us</h2>
-                    <p>Fill out the form below to get in touch with us.</p>
-                </div>
-                <div className={styles.rightcolumn}>
-                    <form className={styles.contactform}>
-                        <div className={styles.formgroup}>
-                            <label htmlFor="name">Name:</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" />
-                        </div>
-                        <div className={styles.formgroup}>
-                            <label htmlFor="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Your email" />
-                        </div>
-                        <div className={styles.formgroup}>
-                            <label htmlFor="message">Message:</label>
-                            <textarea id="message" name="message" placeholder="Your message"></textarea>
-                        </div>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-            <img>
-            </img>
-
-
+            <Container>
+                <Row>
+                    <Col>
+                        <h1 className={styles.formu}>
+                            TEST
+                        </h1>
+                    </Col>
+                    <Col>
+                        <FormValidation />
+                    </Col>
+                    
+                </Row>
+            </Container>
         </>
     )
 }

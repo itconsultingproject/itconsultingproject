@@ -13,35 +13,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .containerCard {
-    padding: 0 0 1em 0;
-    margin-top: 0px;
-    width: 282px;
-    background-color: #AAABB8;
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    justify-content: space-between;
-    flex-direction: column;
-  }
   
-  .description {
-    font-family: var(--font);
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    padding: 25px 25px;
-  }
-  .containerHome {
-    display: flex;
-    justify-content: space-around;
-    margin: none;
-  }
-  .containerFavorites {
-      display: flex;
-      justify-content: space-around;
-  }
   .text h1 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -58,6 +30,7 @@
     font-weight: 400;
     padding: 1em;
     text-decoration: none;
+    white-space: nowrap;
     
   }
   .navbar {
@@ -79,27 +52,8 @@
     color: var(--white);
   }
 
-
-  .containerPlaces section {
-    margin: 2em 20em;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px; 
-    grid-auto-rows: minmax(100px, auto); 
-  }
-  
   .cover {
     width: 100%;
-  }
-  
-  .containerCard h2,
-  .favorite {
-    padding: 0 1em;
-  }
-  
-  .favorite {
-    width: 25px;
   }
   
   .link {
@@ -107,42 +61,23 @@
     color: var(--preto);
     text-align: left;
   }
-  .coverBanner {
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: none;
-    margin-bottom: none;
-
-  }
-  .contactuscontainer {
-    display: flex;
-    justify-content: space-between;
-
-  }
   
-  .leftcolumn {
-    flex: 1;
-  }
-  
-  .rightcolumn {
-    flex: 1;
-  }
-  
-  .contactform {
+  .formu {
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adding a light shadow */
-  }
-  
-  .formgroup {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
+    margin-top: 15px;
+    
   }
   
   label {
     display: block;
     margin-bottom: 5px;
+  }
+  .text1 {
+    margin-top: 5px;
+    margin-bottom: 0px;
   }
   
   input[type="text"],
@@ -161,6 +96,7 @@
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
   
   button:hover {
@@ -168,9 +104,7 @@
   }
   
   
-  iframe {
-    height: 60vh;    
-  }
+
 
   
 
