@@ -9,11 +9,12 @@ import Strategic from "pages/Pages/Strategic";
 import Cybersecurity from "pages/Pages/Cybersecurity";
 import TechnologyImpl from "pages/Pages/TechnologyImpl";
 import Datamanagment from "pages/Pages/DataManagment";
+import Header from "./components/Navbar";
 
 function AppRoutes() {
     return (
         <BrowserRouter>
-            <Navbar />
+            <Header />
                 <Container>
                         <Routes>
                             <Route path="/" element={<Home />}></Route>
@@ -22,7 +23,6 @@ function AppRoutes() {
                             <Route path="/cybersecurity" element={<Cybersecurity />}></Route>
                             <Route path="/Technologyimpl" element={<TechnologyImpl />}></Route>
                             <Route path="/datamanagment" element={<Datamanagment />}></Route>
-                            <Route path="/:id" element={<Places />}></Route>
                         </Routes>
                 </Container>
             <Footer />

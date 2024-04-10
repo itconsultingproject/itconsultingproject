@@ -38,7 +38,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.1em 20em;
-    background-color: #2C2C54;
+    background-color: #ECECEC;
+    color: #ECECEC;
   }
   .footer {
     display: flex;

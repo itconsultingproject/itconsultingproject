@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-
+import img from "../../images/itplanning.jpg"
 
 function CardImage() {
   return (
@@ -23,7 +23,7 @@ function CardImage() {
                                   <Button variant="primary">Go somewhere</Button>
                               </Link>
                         </Card.Body>
-                        <Card.Img variant="bottom" src="f" />
+                        <Card.Img variant="bottom" src="k" />
                     </Card>
                    </Col >
                    
