@@ -41,6 +41,22 @@
     background-color: #ECECEC;
     color: #ECECEC;
   }
+
+  .card {
+    margin-bottom: 25px;
+  }
+
+  .testimonials{
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    
+
+  }
   .footer {
     display: flex;
     justify-content: center;
