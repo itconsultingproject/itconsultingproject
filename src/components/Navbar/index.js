@@ -11,10 +11,12 @@ function Header() {
       <Container>
         <Navbar.Brand href="./">COMPANY NAME</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Collapse className={styles.navbarmenu} id="basic-navbar-nav">
+          <div className={styles.navbarmenu}> 
+            <Nav >
             <Nav.Link href='./'>Home</Nav.Link>
             <Nav.Link href='/contactus'>Contact us</Nav.Link>
+            {/* 
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -26,7 +28,11 @@ function Header() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            */}
+            
           </Nav>
+          </div>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>

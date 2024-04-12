@@ -14,10 +14,13 @@ function CardImage() {
                 <Row>
                     <Col>
                         <br />
-                        <Card>
+                        <Card className={styles.singlecard}>
                             <Card.Img variant="bottom" src="k" />
                             <Card.Body>
                                 <Card.Text>
+                                    <h1>
+                                        Strategic It Planning
+                                    </h1>
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
                                 </Card.Text>
@@ -30,10 +33,13 @@ function CardImage() {
 
                     <Col>
                         <br />
-                        <Card>
+                        <Card  className={styles.singlecard}>
                             <Card.Img variant="bottom" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Text>
+                                    <h1>
+                                        Cybersecurity
+                                    </h1>
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
                                 </Card.Text>
@@ -45,9 +51,12 @@ function CardImage() {
                     </Col >
                     <Col>
                         <br />
-                        <Card>
+                        <Card  className={styles.singlecard}>
                             <Card.Body>
                                 <Card.Text>
+                                    <h1>
+                                        Technology Implementation
+                                    </h1>
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
                                 </Card.Text>
@@ -60,9 +69,12 @@ function CardImage() {
                     </Col >
                     <Col>
                         <br />
-                        <Card>
+                        <Card className={styles.singlecard}>
                             <Card.Body>
                                 <Card.Text>
+                                    <h1>
+                                        Data Analysis and Management
+                                    </h1>
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
                                 </Card.Text>

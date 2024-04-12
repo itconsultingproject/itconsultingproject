@@ -1,7 +1,10 @@
-
 import React, { Fragment } from 'react';
 import { Container, Row, Col, Card, CardDeck, Button } from 'react-bootstrap';
-import styles from 'Styles.module.css'
+import Image from 'react-bootstrap/Image';
+import styles from 'Styles.module.css';
+import imgTheo from '../../images/theo.png'
+import imgDaniel from '../../images/daniel.png'
+import imgSandra from '../../images/sandra.png'
 /*
 import animal1 from '../assets/animal1.jpg';
 import animal2 from '../assets/animal2.jpg';
@@ -33,7 +36,8 @@ function Testimonials() {
 
                 <Row className="h-100 p-3 justify-content-center align-items-start">
                     <Col md={6} className={styles.testimonials}>
-                        <h1 className="text-black">Testimonials 1</h1>
+                    <Image src={imgTheo} className={styles.img}roundedCircle />
+                        <h1 className="text-black">Theo</h1>
                         <p className="p-2">
                             Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies
                             tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam
@@ -42,7 +46,9 @@ function Testimonials() {
                         </p>
                     </Col>
                     <Col md={6} className={styles.testimonials}>
-                        <h1 className="text-black">Testimonials 2</h1>
+                    <Image src={imgSandra} className={styles.img} roundedCircle />
+
+                        <h1 className="text-black">Sandra</h1>
                         <p className="p-2">
                             Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies
                             tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam
@@ -51,7 +57,8 @@ function Testimonials() {
                         </p>
                     </Col>
                     <Col md={6} className={styles.testimonials}>
-                        <h1 className="text-black">Testimonials 3</h1>
+                    <Image src={imgDaniel} className={styles.img} roundedCircle />
+                        <h1 className="text-black">Daniel</h1>
                         <p className="p-2">
                             Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies
                             tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam
@@ -75,7 +82,7 @@ function Testimonials() {
                     </Col>
                     <Col md={3}>
                         <img
-                            src={""}
+                            src={''}
                             width="500em"
                             height="400em"
                         />
