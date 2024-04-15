@@ -5,17 +5,11 @@ import React from 'react';
 
 function Footer() {
     return (
-        
-    <footer className={styles.footer}>
-            <h2>Developed by Claudemar Boito Leal.</h2>
+        <footer className={styles.footer}>
+            <div>
+                <p>&copy; 2024 COMPANY NAME. All rights reserved.</p>
+            </div>
         </footer>
-    
-        
-
-
-
-
-
   );
 }
         

@@ -78,13 +78,12 @@
     display: flex;
     justify-content: center;
     background-color: #ECECEC;
-  }
-  
-  .footer h2 {
     font-size: 18px;
     font-weight: 400;
-    color: var(--white);
+    padding-top: 20px;
   }
+
+  
 
   .cover {
     width: 100%;
