@@ -76,39 +76,6 @@ function Testimonials() {
                         </p>
                     </Col>
                 </Row>
-                <Row className="h-100 p-3 justify-content-center align-items-center">
-                    <Col md={12} className="text-center">
-                        <h1>Title</h1>
-                    </Col>
-                    <Col md={3}>
-                        <img
-                            src={''}
-                            width="500em"
-                            height="400em"
-                        />
-                    </Col>
-                    <Col md={3}>
-                        <img
-                            src={""}
-                            width="500em"
-                            height="400em"
-                        />
-                    </Col>
-                    <Col md={3}>
-                        <img
-                            src={""}
-                            width="500em"
-                            height="400em"
-                        />
-                    </Col>
-                    <Col md={3}>
-                        <img
-                            src={"image4"}
-                            width="500em"
-                            height="400em"
-                        />
-                    </Col>
-                </Row>
             </Container>
         </Fragment>
     );

@@ -55,7 +55,7 @@ function FormValidation() {
                             <Form.Label className={style.text1}>E-mail</Form.Label>
                             <Form.Control type="text" placeholder="E-mail" required />
                             <Form.Control.Feedback type="invalid">
-                                Please provide a valid city.
+                                Please provide a valid E-mail.
                             </Form.Control.Feedback>
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">

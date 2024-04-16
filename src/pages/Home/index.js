@@ -6,6 +6,7 @@ import text from "../../json/db.json";
 import Card from 'react-bootstrap/Card';
 import CardImage from "components/Card";
 import Testimonials from "components/Testimonials";
+import TestimonialsCrud from "components/TestimonialsCrud";
 
 
 
@@ -25,9 +26,17 @@ function Home() {
                     Testimonials
                 </h1>
             </Title>
+            {/* 
             <div>
                 <Testimonials />
             </div>
+            
+            */}
+            
+            <div>
+                <TestimonialsCrud />
+            </div>
+                
         </>
     )
 }
