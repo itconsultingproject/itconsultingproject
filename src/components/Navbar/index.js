@@ -9,7 +9,7 @@ function Header() {
     return (
     <Navbar expand="md" className={styles.navbar}>
       <Container>
-        <Navbar.Brand href="./">COMPANY NAME</Navbar.Brand>
+        <Navbar.Brand href="./">ALLURE</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className={styles.navbarmenu} id="basic-navbar-nav">
           <div className={styles.navbarmenu}> 
