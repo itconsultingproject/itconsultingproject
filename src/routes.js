@@ -10,6 +10,8 @@ import Cybersecurity from "pages/Pages/Cybersecurity";
 import TechnologyImpl from "pages/Pages/TechnologyImpl";
 import Datamanagment from "pages/Pages/DataManagment";
 import Header from "./components/Navbar";
+import Services from './Services'; 
+import AboutUs from './AboutUs'; 
 
 function AppRoutes() {
     return (
@@ -23,6 +25,8 @@ function AppRoutes() {
                             <Route path="/cybersecurity" element={<Cybersecurity />}></Route>
                             <Route path="/Technologyimpl" element={<TechnologyImpl />}></Route>
                             <Route path="/datamanagment" element={<Datamanagment />}></Route>
+                            <Route path="/services" component={Services} />
+                            <Route path="/about" component={AboutUs} />
                         </Routes>
                 </Container>
             <Footer />
