@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer className={styles.footer}>
             <div>
-                <p>&copy; 2024 COMPANY NAME. All rights reserved.</p>
+                <p>&copy; 2024 ALLURE. All rights reserved.</p>
             </div>
         </footer>
   );
