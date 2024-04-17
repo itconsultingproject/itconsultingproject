@@ -22,10 +22,11 @@ function CardImage() {
                             <Card.Body>
                                 <Card.Text>
                                     <h1>
-                                        Strategic It Planning
+                                        Strategic Planning
                                     </h1>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    <p>Crafting tailored IT roadmaps for your business success.
+                                    Our Strategic IT Planning service aligns tech investments with your goals, ensuring efficiency and resilience.</p>
+                                    <p>Stay ahead with expert guidance</p>
                                 </Card.Text>
                                 <Link to='./strategic'>
                                     <Button variant="primary">Go somewhere</Button>
