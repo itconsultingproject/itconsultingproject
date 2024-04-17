@@ -16,6 +16,8 @@ function Header() {
             <Nav >
             <Nav.Link href='./'>Home</Nav.Link>
             <Nav.Link href='/contactus'>Contact us</Nav.Link>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/about">About Us</Link></li>
             {/* 
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
