@@ -1,114 +1,69 @@
 import React, { useState, useEffect } from 'react';
-import styles from 'Styles.module.css';
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import styles from 'Styles.module.css'
 
-
-const TestimonialsCrud = () => {
-    const [testimonials, setTestimonials] = useState([]);
-    const [newTestimonial, setNewTestimonial] = useState('');
-    const [newName, setNewName] = useState('');
-    const [editingIndex, setEditingIndex] = useState(null);
-
-    useEffect(() => {
-        const storedTestimonials = localStorage.getItem('testimonials');
-        if (storedTestimonials) {
-          setTestimonials(JSON.parse(storedTestimonials));
-        }
-      }, []);
-
-    useEffect(() => {
-        localStorage.setItem('testimonials', JSON.stringify(testimonials));
-    }, [testimonials]);
-    
-    
-
-    const handleAddTestimonial = () => {
-        if (newTestimonial.trim() !== '' && newName.trim() !== '') {
-            setTestimonials([...testimonials, { name: newName, testimonial: newTestimonial }]);
-            setNewTestimonial('');
-            setNewName('');
-        }
-    };
-
-    const handleDeleteTestimonial = (index) => {
-        const updatedTestimonials = [...testimonials];
-        updatedTestimonials.splice(index, 1);
-        setTestimonials(updatedTestimonials);
-    };
-
-    const handleEditTestimonial = (index) => {
-        setEditingIndex(index);
-        setNewTestimonial(testimonials[index].testimonial);
-        setNewName(testimonials[index].name);
-    };
-
-    const handleSaveEdit = () => {
-        if (newTestimonial.trim() !== '' && newName.trim() !== '') {
-            const updatedTestimonials = [...testimonials];
-            updatedTestimonials[editingIndex] = { name: newName, testimonial: newTestimonial };
-            setTestimonials(updatedTestimonials);
-            setEditingIndex(null);
-            setNewTestimonial('');
-            setNewName('');
-        }
-    };
-
-    return (
-        <Container>
-            <Row>
-                
-                    <div >
-                        <ul>
-                            {testimonials.map((testimonial, index) => (
-                                <div key={index} className={styles.testimonialsText} >
-                                    <div className={styles.testimonialsName}>{testimonial.name}</div>
-                                    <div style={{ padding: "20px" }}>{testimonial.testimonial}</div>
-                                    <div>
-                                        <button onClick={() => handleEditTestimonial(index)}>Edit</button>
-                                        <button onClick={() => handleDeleteTestimonial(index)}>Delete</button>
-                                    </div>
-                                    <br />   
-                                
-                                </div>
-
-                            ))}
-                        </ul>
-                        
-                    </div>
+const Testimonials = () => {
+    const [testimonials, setTestimonials] = useState(() => {
+      const storedTestimonials = localStorage.getItem('testimonials');
+      return storedTestimonials ? JSON.parse(storedTestimonials) : [];
+    });
   
-
-            </Row>
-            
-            <Row>
-                <div className={styles.testimonialsCrud}>
-                    <h2>Testimonials</h2>
-                    <input
-                        type="text"
-                        value={newName}
-                        onChange={(e) => setNewName(e.target.value)}
-                        placeholder="Enter name"
-                    />
-                    <input
-                        type="text"
-                        value={newTestimonial}
-                        onChange={(e) => setNewTestimonial(e.target.value)}
-                        placeholder="Enter new testimonial"
-                    />
-                    {editingIndex !== null ? (
-                        <button onClick={handleSaveEdit}>Save Edit</button>
-                    ) : (
-                        <button onClick={handleAddTestimonial}>Add Testimonial</button>
-                    )}
-
-                </div>
-            </Row>
-        </Container>
-
-
+    useEffect(() => {
+      localStorage.setItem('testimonials', JSON.stringify(testimonials));
+    }, [testimonials]);
+  
+    const addTestimonial = (testimonial) => {
+      setTestimonials([...testimonials, testimonial]);
+    };
+  
+    const updateTestimonial = (index, updatedTestimonial) => {
+      const updatedTestimonials = [...testimonials];
+      updatedTestimonials[index] = updatedTestimonial;
+      setTestimonials(updatedTestimonials);
+    };
+  
+    const deleteTestimonial = (index) => {
+      const updatedTestimonials = testimonials.filter((_, i) => i !== index);
+      setTestimonials(updatedTestimonials);
+    };
+  
+    const [editingIndex, setEditingIndex] = useState(null);
+  
+    return (
+      <div>
+        
+        {/* Render the testimonials here */}
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className={styles.testimonials}>
+            <h3>{testimonial.name}</h3>
+            {editingIndex === index ? (
+              <>
+                <input type="text" value={testimonial.text} onChange={(e) => updateTestimonial(index, { ...testimonial, text: e.target.value })} />
+                <button onClick={() => setEditingIndex(null)}>Cancel</button>
+                <button onClick={() => setEditingIndex(null)}>Save</button>
+              </>
+            ) : (
+              <>
+                <p>{testimonial.text}</p>
+                <button onClick={() => setEditingIndex(index)}>Edit</button>
+              </>
+            )}
+            <button onClick={() => deleteTestimonial(index)}>Delete</button>
+          </div>
+        ))}
+        {/* Add a form to add a new testimonial */}
+        <form onSubmit={(e) => {
+          e.preventDefault();
+          const { name, text } = e.target.elements;
+          addTestimonial({ name: name.value, text: text.value });
+          name.value = '';
+          text.value = '';
+        }}>
+          <input type="text" name="name" className={styles.inputText} placeholder="Name" required />
+          <input type="text" name="text" className={styles.inputText} placeholder="Testimonial" required />
+          <button type="submit">Add Testimonial</button>
+        </form>
+      </div>
     );
-};
+  };
 
-export default TestimonialsCrud;
+export default Testimonials;

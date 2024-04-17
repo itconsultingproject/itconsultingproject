@@ -1,5 +1,9 @@
 import styles from '../../Styles.module.css';
-import image from '../../images/banner-home.jpg'
+import banner1 from '../../images/banner-home.jpg';
+import banner2 from '../../images/banner2.jpg';
+import banner3 from '../../images/banner3.jpg'
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -18,7 +22,7 @@ function Banner() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={image}
+                        src={banner1}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -29,7 +33,7 @@ function Banner() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={image}
+                        src={banner2}
                         alt="Second slide"
                     />
                     <Carousel.Caption>
@@ -40,7 +44,7 @@ function Banner() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={image}
+                        src={banner3}
                         alt="Third slide"
                     />
                     <Carousel.Caption>

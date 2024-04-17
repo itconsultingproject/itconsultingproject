@@ -4,7 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import img from "../../images/itplanning.jpg"
+import itplanning from "../../images/planning.png"
+import cyber from "../../images/cyber.png"
+import tech from "../../images/tech.jpg"
+import data from "../../images/data.png"
 import styles from 'Styles.module.css'
 
 function CardImage() {
@@ -15,7 +18,7 @@ function CardImage() {
                     <Col>
                         <br />
                         <Card className={styles.singlecard}>
-                            <Card.Img variant="bottom" src="k" />
+                            <Card.Img variant="bottom" src={itplanning} />
                             <Card.Body>
                                 <Card.Text>
                                     <h1>
@@ -34,7 +37,7 @@ function CardImage() {
                     <Col>
                         <br />
                         <Card  className={styles.singlecard}>
-                            <Card.Img variant="bottom" src="holder.js/100px180" />
+                            <Card.Img variant="bottom" src={cyber} />
                             <Card.Body>
                                 <Card.Text>
                                     <h1>
@@ -52,6 +55,7 @@ function CardImage() {
                     <Col>
                         <br />
                         <Card  className={styles.singlecard}>
+                            <Card.Img variant="bottom" src={tech} /> {/* dimensions 100px180 */}
                             <Card.Body>
                                 <Card.Text>
                                     <h1>
@@ -64,12 +68,13 @@ function CardImage() {
                                     <Button variant="primary">Go somewhere</Button>
                                 </Link>
                             </Card.Body>
-                            <Card.Img variant="bottom" src="holder.js/100px180" /> {/* dimensions 100px180 */}
+                            
                         </Card>
                     </Col >
                     <Col>
                         <br />
                         <Card className={styles.singlecard}>
+                           <Card.Img variant="bottom" src={data} /> 
                             <Card.Body>
                                 <Card.Text>
                                     <h1>
@@ -82,8 +87,6 @@ function CardImage() {
                                     <Button variant="primary">Go somewhere</Button>
                                 </Link>
                             </Card.Body>
-
-                            <Card.Img variant="bottom" src="holder.js/100px180" />
                         </Card>
                     </Col >
                 </Row>

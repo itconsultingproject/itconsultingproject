@@ -71,6 +71,11 @@
 
   }
 
+  .inputText {
+    margin: 10px;
+
+  }
+
   .img {
     width: 180px;
   }
@@ -155,6 +160,7 @@
   
   button {
     background-color: #007bff;
+    padding: 10px;
     color: #fff;
     border: none;
     border-radius: 4px;
