@@ -22,7 +22,7 @@ function CardImage() {
                             <Card.Body>
                                 <Card.Text>
                                     <h1>
-                                        Strategic Planning
+                                        IT Planning
                                     </h1>
                                     <p>Crafting tailored IT roadmaps for your business success.
                                     Our Strategic IT Planning service aligns tech investments with your goals, ensuring efficiency and resilience.</p>
@@ -44,8 +44,12 @@ function CardImage() {
                                     <h1>
                                         Cybersecurity
                                     </h1>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                     Protecting your digital assets with robust cybersecurity solutions. 
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p>Our expertise safeguards your business from evolving threats, 
+                                    ensuring peace of mind and continuity.</p>
                                 </Card.Text>
                                 <Link to='./cybersecurity'>
                                     <Button variant="primary">Go somewhere</Button>
@@ -62,8 +66,9 @@ function CardImage() {
                                     <h1>
                                         Technology Implementation
                                     </h1>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    Driving seamless tech integration for your business growth. 
+                                    <p>Our implementation services streamline processes, enhance efficiency, and maximize ROI, 
+                                    empowering your digital transformation.</p>
                                 </Card.Text>
                                 <Link to='./technologyimpl'>
                                     <Button variant="primary">Go somewhere</Button>
@@ -79,10 +84,11 @@ function CardImage() {
                             <Card.Body>
                                 <Card.Text>
                                     <h1>
-                                        Data Analysis and Management
+                                        Database
                                     </h1>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    Unlocking the power of data with our database solutions. 
+                                    From design to optimization, we tailor databases to your needs, ensuring reliability, scalability, 
+                                    and performance for informed decision-making
                                 </Card.Text>
                                 <Link to='./datamanagment'>
                                     <Button variant="primary">Go somewhere</Button>
