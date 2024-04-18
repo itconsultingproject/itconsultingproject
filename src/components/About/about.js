@@ -11,7 +11,7 @@ function AboutUs() {
                     <Card>
                         <Card.Img variant="top" src="about.jpg" />
                         <Card.Body>
-                            <Card.Title>About Our Company</Card.Title>
+                            <Card.Title>About ALLURE</Card.Title>
                             <Card.Text>
                                 Description about our company.
                             </Card.Text>
