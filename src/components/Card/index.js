@@ -29,7 +29,7 @@ function CardImage() {
                                     <p>Stay ahead with expert guidance</p>
                                 </Card.Text>
                                 <Link to='./strategic'>
-                                    <Button variant="primary">Go somewhere</Button>
+                                    <Button variant="primary">Find out more...</Button>
                                 </Link>
                             </Card.Body>
                         </Card>
@@ -52,7 +52,7 @@ function CardImage() {
                                     ensuring peace of mind and continuity.</p>
                                 </Card.Text>
                                 <Link to='./cybersecurity'>
-                                    <Button variant="primary">Go somewhere</Button>
+                                    <Button variant="primary">Find out more...</Button>
                                 </Link>
                             </Card.Body>
                         </Card>
@@ -71,7 +71,7 @@ function CardImage() {
                                     empowering your digital transformation.</p>
                                 </Card.Text>
                                 <Link to='./technologyimpl'>
-                                    <Button variant="primary">Go somewhere</Button>
+                                    <Button variant="primary">Find out more...</Button>
                                 </Link>
                             </Card.Body>
                             
@@ -91,7 +91,7 @@ function CardImage() {
                                     and performance for informed decision-making
                                 </Card.Text>
                                 <Link to='./datamanagment'>
-                                    <Button variant="primary">Go somewhere</Button>
+                                    <Button variant="primary">Find out more...</Button>
                                 </Link>
                             </Card.Body>
                         </Card>
