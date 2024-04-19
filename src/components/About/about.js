@@ -1,6 +1,8 @@
 // AboutUs.js
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import photo from '../../components/images/about.jpg';
+
 
 function AboutUs() {
     return (
@@ -9,7 +11,8 @@ function AboutUs() {
             <Row>
                 <Col md={6}>
                     <Card>
-                        <Card.Img variant="top" src="about.jpg" />
+                        <Card.Img variant="top" src="about.jpg" 
+
                         <Card.Body>
                             <Card.Title>About Our ALLURE</Card.Title>
                             <Card.Text>
