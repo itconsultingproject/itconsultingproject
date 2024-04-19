@@ -21,7 +21,7 @@ function Banner() {
             <Carousel data-bs-theme="dark">
                 <Carousel.Item>
                     <img
-                        className="w-100"
+                        className={styles.image}
                         src={banner1}
                         alt="First slide"
                     />
@@ -32,7 +32,7 @@ function Banner() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="w-100"
+                        className={styles.image}
                         src={banner2}
                         alt="Second slide"
                     />
@@ -43,7 +43,7 @@ function Banner() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="w-100"
+                        className={styles.image}
                         src={banner3}
                         alt="Third slide"
                     />
@@ -53,7 +53,6 @@ function Banner() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-
         </>
 
     )
