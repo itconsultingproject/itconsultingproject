@@ -139,7 +139,10 @@
     margin-top: 15px;
     
   }
-  
+  .image {
+    width: 100px;
+    height: 180px;
+  }
   label {
     display: block;
     margin-bottom: 5px;

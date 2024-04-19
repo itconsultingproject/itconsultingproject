@@ -9,6 +9,7 @@ import cyber from "../../images/cyber.png"
 import tech from "../../images/tech.jpg"
 import data from "../../images/data.png"
 import styles from 'Styles.module.css'
+import { CardTitle } from 'react-bootstrap';
 
 function CardImage() {
     return (
@@ -18,15 +19,17 @@ function CardImage() {
                     <Col>
                         <br />
                         <Card className={styles.singlecard}>
-                            <Card.Img variant="bottom" src={itplanning} />
+                            <Card.Img variant="bottom" src={itplanning} className={styles.images} alt='it'/>
                             <Card.Body>
+                                <Card.Title>
+                                    IT Planning
+                                </Card.Title>
+
                                 <Card.Text>
-                                    <h1>
-                                        IT Planning
-                                    </h1>
-                                    <p>Crafting tailored IT roadmaps for your business success.
-                                    Our Strategic IT Planning service aligns tech investments with your goals, ensuring efficiency and resilience.</p>
-                                    <p>Stay ahead with expert guidance</p>
+
+                                    Crafting tailored IT roadmaps for your business success.
+                                    Our Strategic IT Planning service aligns tech investments with your goals, ensuring efficiency and resilience.
+                                    Stay ahead with expert guidance
                                 </Card.Text>
                                 <Link to='./strategic'>
                                     <Button variant="primary">Find out more...</Button>
@@ -37,19 +40,17 @@ function CardImage() {
 
                     <Col>
                         <br />
-                        <Card  className={styles.singlecard}>
-                            <Card.Img variant="bottom" src={cyber} />
+                        <Card className={styles.singlecard}>
+                            <Card.Img variant="bottom" src={cyber} className={styles.images} alt='cyber' />
                             <Card.Body>
+                                <Card.Title>
+                                    Cybersecurity
+                                </Card.Title>
+
                                 <Card.Text>
-                                    <h1>
-                                        Cybersecurity
-                                    </h1>
-                                     Protecting your digital assets with robust cybersecurity solutions. 
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p>Our expertise safeguards your business from evolving threats, 
-                                    ensuring peace of mind and continuity.</p>
+                                    Protecting your digital assets with robust cybersecurity solutions.
+                                    Our expertise safeguards your business from evolving threats,
+                                    ensuring peace of mind and continuity.
                                 </Card.Text>
                                 <Link to='./cybersecurity'>
                                     <Button variant="primary">Find out more...</Button>
@@ -59,35 +60,35 @@ function CardImage() {
                     </Col >
                     <Col>
                         <br />
-                        <Card  className={styles.singlecard}>
-                            <Card.Img variant="bottom" src={tech} /> {/* dimensions 100px180 */}
+                        <Card className={styles.singlecard}>
+                            <Card.Img variant="bottom" src={tech} className={styles.images} alt='tech'/> {/* dimensions 100px180 */}
                             <Card.Body>
+                                <CardTitle>
+                                    Technology Implementation
+                                </CardTitle>
                                 <Card.Text>
-                                    <h1>
-                                        Technology Implementation
-                                    </h1>
-                                    Driving seamless tech integration for your business growth. 
-                                    <p>Our implementation services streamline processes, enhance efficiency, and maximize ROI, 
-                                    empowering your digital transformation.</p>
+                                    Driving seamless tech integration for your business growth.
+                                    Our implementation services streamline processes, enhance efficiency, and maximize ROI,
+                                    empowering your digital transformation.
                                 </Card.Text>
                                 <Link to='./technologyimpl'>
                                     <Button variant="primary">Find out more...</Button>
                                 </Link>
                             </Card.Body>
-                            
+
                         </Card>
                     </Col >
                     <Col>
                         <br />
                         <Card className={styles.singlecard}>
-                           <Card.Img variant="bottom" src={data} /> 
+                            <Card.Img variant="bottom" src={data} className={styles.images} alt='database' />
                             <Card.Body>
+                                <CardTitle>
+                                    Database
+                                </CardTitle>
                                 <Card.Text>
-                                    <h1>
-                                        Database
-                                    </h1>
-                                    Unlocking the power of data with our database solutions. 
-                                    From design to optimization, we tailor databases to your needs, ensuring reliability, scalability, 
+                                    Unlocking the power of data with our database solutions.
+                                    From design to optimization, we tailor databases to your needs, ensuring reliability, scalability,
                                     and performance for informed decision-making
                                 </Card.Text>
                                 <Link to='./datamanagment'>
