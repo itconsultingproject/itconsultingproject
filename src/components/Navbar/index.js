@@ -18,7 +18,6 @@ function Header() {
               <Nav.Link href='/contactus'>Contact us</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href='/about'>About us</NavDropdown.Item><NavDropdown.Divider />
-                <NavDropdown.Item href='/services'>Services</NavDropdown.Item><NavDropdown.Divider />
                 <NavDropdown.Item href='/strategic'>IT Planning</NavDropdown.Item><NavDropdown.Divider />
                 <NavDropdown.Item href='/cybersecurity'>Cybersecurity</NavDropdown.Item><NavDropdown.Divider />
                 <NavDropdown.Item href='/technologyimpl'>Technology Implementation</NavDropdown.Item><NavDropdown.Divider />

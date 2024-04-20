@@ -2,22 +2,11 @@ import styles from '../../Styles.module.css';
 import banner1 from '../../images/banner-home.jpg';
 import banner2 from '../../images/banner2.jpg';
 import banner3 from '../../images/banner3.jpg'
-
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 function Banner() {
     return (
         <>
-
-            {/*
-            <Image src={image} alt='banner' fluid />
-            <div className={styles.coverBanner}
-                style={{ backgroundImage: `url('/images/banner-${imagem}.jpg')` }}>
-
-            </div>*/}
-
             <Carousel data-bs-theme="dark">
                 <Carousel.Item>
                     <img

@@ -4,16 +4,16 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import about from '../../images/about.jpg'
 import Banner from 'components/Banner';
 import Title from 'components/Title';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function AboutUs() {
     return (
         <Container>
             <Banner />
-            <Title></Title>
             <Title>
                 <h1>
-                    About us
+                    Cybersecurity and Risk Managment
                 </h1>
             </Title>
             <br />
@@ -54,12 +54,7 @@ function AboutUs() {
                     </Card>
                 </Col>
             </Row>
-            <Row>
-                <Col md={12}>
-                    <h2>Clients We've Worked With</h2>
-                    WICKER, ELAN, WALLAS, ANGEL
-                </Col>
-            </Row>
+            <br />
         </Container>
     );
 }
