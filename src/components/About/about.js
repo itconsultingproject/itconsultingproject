@@ -1,11 +1,6 @@
 // AboutUs.js
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import about from '../../images/about.jpg'
-import Banner from 'components/Banner';
-import Title from 'components/Title';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function AboutUs() {
     return (
@@ -20,7 +15,7 @@ function AboutUs() {
             <Row>
                 <Col md={6}>
                     <Card>
-                        <Card.Img variant="top" src={about} />
+                        <Card.Img variant="top" src="about.jpg" />
                         <Card.Body>
                             <Card.Title>About Our ALLURE</Card.Title>
                             <Card.Text>
