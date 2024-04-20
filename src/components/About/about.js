@@ -10,16 +10,15 @@ function AboutUs() {
             <Banner />
             <Title>
                 <h1>
-                    Cybersecurity and Risk Managment
+                    About us
                 </h1>
             </Title>
             <br />
             <Row>
                 <Col md={6}>
                     <Card>
-                        <Card.Img variant="top" src="about.jpg" />
                         <Card.Body>
-                            <Card.Title>About Our ALLURE</Card.Title>
+                            <Card.Title>About ALLURE</Card.Title>
                             <Card.Text>
                                 At ALLURE, we are passionate about leveraging technology to empower businesses and organizations. With 10 years of experience in the IT industry, we have established ourselves as a trusted partner for clients seeking innovative solutions and unparalleled support.
 

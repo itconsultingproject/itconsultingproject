@@ -28,7 +28,6 @@ function Banner() {
                     />
                     <Carousel.Caption>
                         <h5>Empowering Your Digital Success</h5>
-                       
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
