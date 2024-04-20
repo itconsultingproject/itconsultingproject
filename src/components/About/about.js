@@ -1,6 +1,8 @@
 // AboutUs.js
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import Banner from 'components/Banner';
+import Title from 'components/Title';
 
 function AboutUs() {
     return (

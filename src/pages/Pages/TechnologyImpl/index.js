@@ -25,8 +25,6 @@ function TechnologyImpl() {
 
                 </Row>
             </Container>
-
-
         </>
     )
 }
